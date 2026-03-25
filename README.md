@@ -18,6 +18,8 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 4. Retrieve relevant chunks
 5. LLM answers using **only** the retrieved context (no hallucinations)
 6. Gradio UI input your Prompts OR interact within your notebook.
+
+
    
 ##Sample Prompts and Output## 
 
