@@ -13,7 +13,7 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 **How it works:**
 1. Load documents from `/data`
   a. FIRST: Create a /data directory and upload your 3 - TXT files - Resume, Job Description, Company notes your interviewing
-2. Using an OPENAI_API_KEY or your choice
+2. Using an OPENAI_API_KEY of your choice
 3. Split → embed → store in FAISS
 4. Retrieve relevant chunks
 5. LLM answers using **only** the retrieved context (no hallucinations)
