@@ -10,16 +10,18 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 - Clean, production-style code structure
 - Gradio for PROMPTING, ask your questions in a nice UI ! 
 
+# AI Interview Prep Assistant (LangChain RAG)
+
 **How it works:**
 1. Load documents from `/data`
-  a. FIRST: Create a /data directory and upload your 3 - TXT files - Resume, Job Description, Company notes your interviewing
+  a. Upload your Resume ONLY to your /data directory. You will be prompted in the notebook to enter URLs for both Job Description + Company Notes which will automatically upload the required files into the /data directory
 2. Using an OPENAI_API_KEY of your choice
 3. Split → embed → store in FAISS
 4. Retrieve relevant chunks
 5. LLM answers using **only** the retrieved context (no hallucinations)
-6. Gradio UI web interface to Prompt or within your notebook !
-
-Sample Prompts and Output 
+6. Gradio UI input your Prompts OR interact within your notebook.
+   
+##Sample Prompts and Output## 
 
 🔹 Question: Why am I a strong fit for this role?
 Answer:
@@ -58,7 +60,7 @@ To enhance your interview readiness, focus on refining your storytelling for lea
 **Suggestion:** Consider practicing common interview questions that focus on behavioral and situational responses to effectively convey your leadership style and the impact of your contributions.
 
 
-This includes an LLM-as-Judge evaluator with clear scores and explanation on 3 key areas: Groundedness, Relevance, and Professionalism. 
+##This includes an LLM-as-Judge evaluator with clear scores and explanation on 3 key areas: Groundedness, Relevance, and Professionalism.##
 ![EvalLLMJudge](EvalLLLasJudge.png)
 
 LLM-as-Judge Evaluation Results Explained
