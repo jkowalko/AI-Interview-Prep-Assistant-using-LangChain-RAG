@@ -10,8 +10,6 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 - Clean, production-style code structure
 - Gradio for PROMPTING, ask your questions in a nice UI ! 
 
-# AI Interview Prep Assistant (LangChain RAG)
-
 **How it works:**
 1. Load documents from `/data`
   a. Upload your Resume ONLY to your /data directory. You will be prompted in the notebook to enter URLs for both Job Description + Company Notes which will automatically upload the required files into the /data directory
