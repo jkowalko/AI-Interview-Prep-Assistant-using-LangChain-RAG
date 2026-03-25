@@ -14,3 +14,5 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 2. Split → embed → store in FAISS
 3. Retrieve relevant chunks
 4. LLM answers using **only** the retrieved context (no hallucinations)
+
+This includes an LLM-as-Judge evaluator with clear scores and explanation on 3 key areas: Groundedness, Relevance, and Professionalism. 
