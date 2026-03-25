@@ -8,7 +8,7 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 - FAISS vector search
 - Context-grounded answers with source attribution
 - Clean, production-style code structure
-- Gradio for evaluation  interactive UI
+- Gradio for PROMPTING, ask your questions in a nice UI ! 
 
 **How it works:**
 1. Load documents from `/data`
@@ -17,7 +17,7 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 3. Split → embed → store in FAISS
 4. Retrieve relevant chunks
 5. LLM answers using **only** the retrieved context (no hallucinations)
-6. Gradio UI to display LLM-as-Judge results (WebInterface to Prompt your asks !!) 
+6. Gradio UI web interface to Prompt or within your notebook !
 
 Sample Prompts and Output 
 
