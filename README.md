@@ -60,3 +60,26 @@ To enhance your interview readiness, focus on refining your storytelling for lea
 
 This includes an LLM-as-Judge evaluator with clear scores and explanation on 3 key areas: Groundedness, Relevance, and Professionalism. 
 ![EvalLLMJudge](EvalLLLasJudge.png)
+
+LLM-as-Judge Evaluation Results Explained
+This section provides an analysis of the RAG model's performance using an LLM-as-Judge framework. This automated evaluation scores the generated answers based on predefined criteria, offering insights into the model's strengths and areas for improvement without manual human labeling.
+
+Understanding the Metrics:
+Groundedness (Score: 7/10): This metric assesses whether the generated answer relies exclusively on the provided context. A high score indicates that the LLM is not hallucinating or introducing outside information. Our model scored 7/10, suggesting a good adherence to the context but with room for more explicit evidence from the provided documents.
+
+Relevance (Score: 9/10): This measures how directly and completely the answer addresses the user's question. A high score means the LLM understood the query and provided a pertinent response. Our model achieved 9/10, indicating strong performance in answering the question directly.
+
+Professionalism (Score: 8/10): This evaluates the tone, structure, and business-focused nature of the answer. It checks for conciseness, clarity, and adherence to professional communication standards. Our model scored 8/10, showing a generally professional output that aligns with the intended interview prep assistant persona.
+
+Overall Assessment (Average Score: 8/10):
+The LLM-as-Judge explains: "The answer effectively demonstrates key qualities that align with the role, such as leadership, ownership, and proactive problem-solving. However, it could be made more grounded with specific examples to substantiate the claims made about skills and experiences. Overall, the tone is professional and aligns well with the company's values but could benefit from more concrete evidence of past achievements."
+
+This summary highlights that while the responses are relevant and professional, there's a need to strengthen the connection between the general claims and concrete evidence found in the source documents.
+
+Recommendations for Improvement:
+To improve the model's performance, particularly its Groundedness, consider the following:
+
+Enhance Source Documents: Ensure your resume, job description, and company notes contain as many specific, quantifiable examples and achievements as possible. The more detailed the input, the better the LLM can ground its answers.
+Refine Chunking Strategy: Experiment with smaller CHUNK_SIZE and slightly higher CHUNK_OVERLAP (CHUNK_SIZE = 800, CHUNK_OVERLAP = 150 currently). This can help prevent crucial pieces of information (like specific numbers or project names) from being split across different chunks, ensuring they are retrieved together.
+Prompt Engineering: Modify the SYSTEM_PROMPT to explicitly instruct the LLM to search for and include specific examples, metrics, or keywords from the context. For instance, you could add: "Always reference specific projects, numbers, or initiatives mentioned in the context when supporting your points."
+Post-Processing/Fact-Checking: Implement an additional step where the generated answer is cross-referenced against the retrieved source chunks to verify the presence of all asserted facts. While LLM-as-Judge does this, a programmatic check could reinforce it.
