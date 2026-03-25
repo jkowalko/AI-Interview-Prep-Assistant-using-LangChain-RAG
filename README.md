@@ -13,11 +13,11 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 **How it works:**
 1. Load documents from `/data`
   a. Upload your Resume ONLY to your /data directory. You will be prompted in the notebook to enter URLs for both Job Description + Company Notes which will automatically upload the required files into the /data directory
-2. Using an OPENAI_API_KEY of your choice
-3. Split → embed → store in FAISS
-4. Retrieve relevant chunks
-5. LLM answers using **only** the retrieved context (no hallucinations)
-6. Gradio UI input your Prompts OR interact within your notebook.
+2. Using an OPENAI_API_KEY OR your choice of Chat flavor
+4. Split → embed → store in FAISS
+5. Retrieve relevant chunks
+6. LLM answers using **only** the retrieved context (no hallucinations)
+7. Gradio UI input your Prompts OR interact within your notebook.
 
 
    
