@@ -8,7 +8,7 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 - FAISS vector search
 - Context-grounded answers with source attribution
 - Clean, production-style code structure
-- Gradio for PROMPTING, ask your questions in a nice UI ! 
+- Gradio for PROMPTING, ask your questions in an easy to use UI ! 
 
 **How it works:**
 1. Load documents from `/data`
