@@ -16,3 +16,4 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 4. LLM answers using **only** the retrieved context (no hallucinations)
 
 This includes an LLM-as-Judge evaluator with clear scores and explanation on 3 key areas: Groundedness, Relevance, and Professionalism. 
+![EvalLLMJudge](EvalLLLasJudge.png)
