@@ -8,16 +8,16 @@ A lightweight Retrieval-Augmented Generation (RAG) app that helps you prepare gr
 - FAISS vector search
 - Context-grounded answers with source attribution
 - Clean, production-style code structure
-- Gradio for PROMPTING, ask your questions in an easy to use UI ! 
+- Gradio for PROMPTING, ask your questions in an easy to use UI experience ! 
 
 **How it works:**
 1. Load documents from `/data`
-  a. Upload your Resume ONLY to your /data directory. You will be prompted in the notebook to enter URLs for both Job Description + Company Notes which will automatically upload the required files into the /data directory
+  a. Upload a Resume ONLY to your /data directory. You will be prompted in the notebook to enter URLs for both Job Description + Company Notes which will automatically upload the required files into the /data directory
 2. Using an OPENAI_API_KEY OR your choice of Chat flavor
 4. Split → embed → store in FAISS
 5. Retrieve relevant chunks
 6. LLM answers using **only** the retrieved context (no hallucinations)
-7. Gradio UI input your Prompts OR interact within your notebook.
+7. Gradio UI to input your prompts OR you can interact directly within your notebook.
 
 
    
@@ -29,7 +29,7 @@ You are a strong fit for this role due to your proactive approach to challenges,
 
 1. **Proactive Problem-Solving**: Your tendency to "dive in to fight the fire" resonates with the company's culture of facing challenges head-on and solving problems with grit and resilience.
 
-2. **Ownership and Execution**: As someone who operates with maximum agency, you exemplify the qualities of a "benevolent dictator" in your domain, driving ideas with conviction and biasing toward action. This aligns with the expectation that each team member is responsible for ultimate results.
+2. **Ownership and Execution**: As someone who operates with maximum agency driving ideas with conviction and biasing toward action. This aligns with the expectation that each team member is responsible for ultimate results.
 
 3. **Commitment to Success**: Your willingness to "run to the roar" reflects a deep care for both company and customer success, matching the organization's drive to create meaningful impact in a fast-moving environment.
 
